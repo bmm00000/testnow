@@ -9,6 +9,6 @@ document.querySelector('form').addEventListener('submit', (event) => {
 	if (value.includes('@')) {
 		header.innerHTML = 'Valid email';
 	} else {
-		header.innerHTML = 'Not a valid email';
+		header.innerHTML = 'Invalid email';
 	}
 });

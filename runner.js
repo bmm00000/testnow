@@ -20,16 +20,18 @@ class Runner {
 			global.beforeEach = (fn) => {
 				beforeEaches.push(fn);
 			};
-			global.it = (desc, fn) => {
+			global.it = async (desc, fn) => {
 				beforeEaches.forEach((func) => func());
-				console.log(chalk.yellow(`\tTest description: ${desc}`));
+
 				try {
-					fn();
+					await fn();
+					console.log(chalk.yellow(`\tTest description: ${desc}`));
 					console.log(
 						chalk.green(`\t\tCongratulations! The test was successful`)
 					);
 				} catch (err) {
 					const message = err.message.replace(/\n/g, '\n\t\t');
+					console.log(chalk.yellow(`\tTest description: ${desc}`));
 					console.log(chalk.red(`\t\tOh no! The test failed!`));
 					console.log(chalk.red(`\t\t${message}`));
 				}
