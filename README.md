@@ -4,7 +4,7 @@
 
 "testnow" recursively collects and runs every file in a project that has a name ending in ".test.js". Then it displays a report of the results of the tests in the terminal.
 
-This repository includes two examples of projects to test, browser-based and node-based, respectively.
+This repository includes two examples of projects to test: a browser-based project and a node-based project, respectively.
 
 Watch demo:
 
