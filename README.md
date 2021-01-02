@@ -6,7 +6,7 @@
 
 This repository includes two examples of projects to test: a browser-based project and a node-based project, respectively.
 
-Watch demo:
+[Watch demo](https://www.loom.com/share/68686bb9b0e24bcf8f7723eab0767dd1)
 
 # Main technologies
 
